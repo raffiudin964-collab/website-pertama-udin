@@ -1,0 +1,377 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: auto;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container-navbar {
+    background-color: #333;
+    width: 100%;
+    height: 10vh;
+    flex-shrink: 0;
+}
+
+.ul-navbar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   flex-wrap: wrap;
+}
+
+.li-navbar {
+   list-style-type: none;
+   margin: 0 10px;
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 3px;
+    transition: all 0.3s ease;
+}
+
+.a-navbar:hover {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.container-content {
+    background-color: rgb(204, 206, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    flex-shrink: 0;
+}
+
+.a-content {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: transform 0.3s ease;
+}
+
+.a-content:hover {
+    transform: scale(1.05);
+}
+
+.a-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 10px 0 0 0;
+}
+
+.img-content {
+    width: 200px;
+    height: 200px;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.container-footer {
+    height: 8vh;
+    background-color: rgb(255, 0, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.h1-footer {
+  font-size: 25px;
+  color: white;
+  margin: 0;
+}
+
+/* ========== TABLET ========== */
+@media (max-width: 768px) {
+    .container-navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .ul-navbar {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .a-navbar {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    .container-content {
+        min-height: auto;
+        padding: 30px 15px;
+    }
+    
+    .a-content {
+        font-size: 18px;
+        max-width: 450px;
+        padding: 25px 18px;
+    }
+    
+    .a-content p {
+        font-size: 1.1rem;
+    }
+
+    .img-content {
+        width: 180px;
+        height: 180px;
+    }
+
+    .h1-footer {
+        font-size: 22px;
+    }
+}
+
+/* ========== HP BESAR (481px - 767px) ========== */
+@media (max-width: 767px) {
+    .container {
+        min-height: auto;
+    }
+
+    .container-navbar {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    .ul-navbar {
+        padding: 10px 5px;
+        gap: 8px;
+    }
+
+    .li-navbar {
+        margin: 0 3px;
+    }
+
+    .a-navbar {
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+
+    .container-content {
+        min-height: auto;
+        padding: 25px 10px;
+    }
+
+    .a-content {
+        width: 95%;
+        max-width: 400px;
+        padding: 20px 15px;
+        font-size: 17px;
+        box-shadow: 8px 8px 4px 0px rgba(0,0,0,0.6);
+    }
+
+    .a-content p {
+        font-size: 1.05rem;
+    }
+
+    .img-content {
+        width: 140px;
+        height: 140px;
+    }
+
+    .h1-footer {
+        font-size: 20px;
+    }
+}
+
+/* ========== HP SEDANG (361px - 480px) ========== */
+@media (max-width: 480px) {
+    .container {
+        min-height: auto;
+    }
+
+    .container-navbar {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    .ul-navbar {
+        padding: 10px 0;
+        gap: 5px;
+    }
+
+    .li-navbar {
+        margin: 0 3px;
+    }
+
+    .a-navbar {
+        font-size: 14px;
+        padding: 5px 8px;
+        font-weight: 700;
+    }
+
+    .a-navbar:hover {
+        background-color: blue;
+        border-radius: 3px;
+    }
+
+    .container-content {
+        min-height: auto;
+        padding: 20px 10px;
+        background-color: rgb(204, 206, 191);
+    }
+
+    .a-content {
+        width: 95%;
+        max-width: 350px;
+        padding: 18px 12px;
+        font-size: 16px;
+        box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.5);
+    }
+
+    .a-content:hover {
+        transform: scale(1.02);
+    }
+
+    .a-content p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+
+    .img-content {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container-footer {
+        height: auto;
+        padding: 12px 5px;
+    }
+
+    .h1-footer {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+/* ========== HP KECIL (< 360px) ========== */
+@media (max-width: 360px) {
+    .container {
+        min-height: auto;
+    }
+
+    .container-navbar {
+        height: auto;
+        padding: 6px 0;
+    }
+
+    .ul-navbar {
+        padding: 8px 0;
+        gap: 3px;
+    }
+
+    .li-navbar {
+        margin: 0 2px;
+    }
+
+    .a-navbar {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    .container-content {
+        min-height: auto;
+        padding: 15px 8px;
+    }
+
+    .a-content {
+        width: 98%;
+        max-width: 300px;
+        padding: 15px 10px;
+        font-size: 14px;
+        box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.4);
+    }
+
+    .a-content p {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+
+    .img-content {
+        width: 100px;
+        height: 100px;
+    }
+
+    .h1-footer {
+        font-size: 16px;
+    }
+}
+
+/* ========== DESKTOP (> 1024px) ========== */
+@media (min-width: 1025px) {
+    .container-navbar {
+        height: 10vh;
+    }
+
+    .ul-navbar {
+        gap: 20px;
+    }
+
+    .li-navbar {
+        margin: 0 15px;
+    }
+
+    .a-navbar {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .container-content {
+        min-height: 82vh;
+        padding: 40px 20px;
+    }
+
+    .a-content {
+        max-width: 600px;
+        padding: 40px 30px;
+    }
+
+    .img-content {
+        width: 250px;
+        height: 250px;
+    }
+
+    .h1-footer {
+        font-size: 25px;
+    }
+}
