@@ -1,0 +1,416 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ========== CONTAINER ========== */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+/* ========== NAVBAR ========== */
+.container-navbar {
+  background-color: #333;
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.ul-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 15px 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.li-navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.a-navbar {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.a-navbar:hover {
+  background-color: blue;
+  transform: scale(1.05);
+}
+
+/* ========== CONTENT ========== */
+.container-content {
+  background-color: rgb(204, 206, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0;
+}
+
+.a-content {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  transition: transform 0.3s ease;
+}
+
+.a-content:hover {
+  transform: scale(1.05);
+}
+
+.a-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 15px 0 0 0;
+}
+
+.a-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.a-content a {
+  color: blue;
+  text-decoration: none;
+}
+
+.a-content a:hover {
+  text-decoration: underline;
+}
+
+.contact-box p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.img-content {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* ========== FOOTER ========== */
+.container-footer {
+  background-color: rgb(255, 0, 51);
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.h1-footer {
+  font-size: 25px;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+/* ========== DESKTOP (≥ 1024px) ========== */
+@media (min-width: 1024px) {
+  .container {
+    min-height: 100vh;
+  }
+
+  .ul-navbar {
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  .a-navbar {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .container-content {
+    padding: 60px 20px;
+    flex: 1;
+  }
+
+  .a-content {
+    max-width: 600px;
+    padding: 40px 30px;
+  }
+
+  .a-content p {
+    font-size: 1.3rem;
+  }
+
+  .img-content {
+    width: 250px;
+    height: 250px;
+  }
+
+  .h1-footer {
+    font-size: 28px;
+  }
+}
+
+/* ========== TABLET (768px - 1023px) ========== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    min-height: 100vh;
+  }
+
+  .ul-navbar {
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .a-navbar {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .container-content {
+    padding: 50px 20px;
+    flex: 1;
+  }
+
+  .a-content {
+    max-width: 450px;
+    padding: 30px 25px;
+  }
+
+  .a-content p {
+    font-size: 1.1rem;
+  }
+
+  .a-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-box p {
+    font-size: 0.95rem;
+  }
+
+  .img-content {
+    width: 180px;
+    height: 180px;
+  }
+
+  .h1-footer {
+    font-size: 24px;
+  }
+}
+
+/* ========== HP BESAR (481px - 767px) ========== */
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    height: auto;
+    min-height: auto;
+  }
+
+  .ul-navbar {
+    gap: 8px;
+    padding: 12px 5px;
+  }
+
+  .a-navbar {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+
+  .container-content {
+    padding: 30px 15px;
+    flex: 0 0 auto;
+  }
+
+  .a-content {
+    max-width: 400px;
+    padding: 20px 15px;
+  }
+
+  .a-content p {
+    font-size: 1.05rem;
+  }
+
+  .a-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-box p {
+    font-size: 0.95rem;
+  }
+
+  .img-content {
+    width: 140px;
+    height: 140px;
+  }
+
+  .h1-footer {
+    font-size: 20px;
+  }
+}
+
+/* ========== HP SEDANG (361px - 480px) ========== */
+@media (max-width: 480px) {
+  .container {
+    height: auto;
+    min-height: auto;
+  }
+
+  .ul-navbar {
+    gap: 5px;
+    padding: 10px 5px;
+  }
+
+  .a-navbar {
+    font-size: 14px;
+    padding: 6px 8px;
+    margin: 0;
+  }
+
+  .a-navbar:hover {
+    background-color: blue;
+    transform: scale(1.02);
+  }
+
+  .container-content {
+    padding: 20px 10px;
+    flex: 0 0 auto;
+  }
+
+  .a-content {
+    width: 95%;
+    max-width: 350px;
+    padding: 18px 12px;
+    box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.5);
+  }
+
+  .a-content:hover {
+    transform: scale(1.02);
+  }
+
+  .a-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 10px 0 0 0;
+  }
+
+  .a-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .contact-box p {
+    font-size: 0.9rem;
+  }
+
+  .img-content {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container-footer {
+    padding: 12px 10px;
+  }
+
+  .h1-footer {
+    font-size: 18px;
+  }
+}
+
+/* ========== HP KECIL (< 360px) ========== */
+@media (max-width: 359px) {
+  .container {
+    height: auto;
+    min-height: auto;
+  }
+
+  .ul-navbar {
+    gap: 3px;
+    padding: 8px 2px;
+  }
+
+  .a-navbar {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+
+  .container-content {
+    padding: 15px 8px;
+    flex: 0 0 auto;
+  }
+
+  .a-content {
+    width: 98%;
+    max-width: 300px;
+    padding: 15px 10px;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.4);
+  }
+
+  .a-content p {
+    font-size: 0.9rem;
+  }
+
+  .a-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-box p {
+    font-size: 0.85rem;
+  }
+
+  .img-content {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container-footer {
+    padding: 10px 8px;
+  }
+
+  .h1-footer {
+    font-size: 16px;
+  }
+}
